@@ -15,7 +15,7 @@
             <div class="row">
                 <div class="col-sm-4">
                     Fruits
-                    <div class="well" ng-repeat="item in fruitPool">
+                    <div class="well" ng-repeat="item in fruitPool" ng-style="{'color': getColor(item)}"> 
                         </button>  {{item}}  <button ng-click="poolFruit()">-></button>
                     </div>
                 </div>
@@ -27,7 +27,7 @@
                 </div>
                 <div class="col-sm-4">
                     Vegetables
-                    <div class="well" ng-repeat="item in vegPool">
+                    <div class="well" ng-repeat="item in vegPool" ng-style="{'color': getColor(item)}">
                         <button ng-click="poolVeg()"><-</button>  {{item}} 
                     </div>
                 </div>

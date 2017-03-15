@@ -12,7 +12,10 @@ app.controller("MainCtrl", ["$scope", function($scope){
            if(fruits.indexOf($scope.fruitPool[i]) < 0){
                console.log('wrong fruit! ' + $scope.fruitPool[i]);
            }else{
-               console.log('correct fruit! '+ $scope.fruitPool[i])
+               console.log('correct fruit! '+ $scope.fruitPool[i]);
+                $scope.getColor = function(item){
+                   return 'red';
+               }
            }
        }
        for(var i=0; i< $scope.vegPool.length; i++){
